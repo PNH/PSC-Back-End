@@ -1,0 +1,47 @@
+<header>
+
+  <div id="rich-search">
+    <input type="text" placeholder="<%= t('search_bar_placeholder') %>"/>
+  </div>
+
+	<div id="loading" style="display:none;"></div>
+
+  <div id="sort-toggle">
+    <a href="#" id="sort-by-date" title="<%= t(:sort_by_date_tip) %>"><%= t(:sort_by_date) %></a>
+    <a href="#" id="sort-alphabetically" title="<%= t(:sort_alphabetically_tip) %>"><%= t(:sort_alphabetically) %></a>
+  </div>
+
+  <div id="view-toggle">
+    <a href="#" id="view-grid" title="<%= t(:view_grid_tip) %>"><%= t(:view_grid) %></a>
+    <a href="#" id="view-list" title="<%= t(:view_list_tip) %>"><%= t(:view_list) %></a>
+  </div>
+
+  <div id="insert-toggle">
+    <a href="#" id="insert-many" title="<%= t(:insert_many_tip) %>"><%= t(:insert_many) %></a>
+    <a href="#" id="insert-one" title="<%= t(:insert_one_tip) %>"><%= t(:insert_one) %></a>
+  </div>
+
+  <ul id="styles" class="scopes">
+    <li class="label"><%= t(:available_styles) %></li>
+  </ul>
+
+</header>
+
+<div id="legacy-form"><%= form_for(@rich_asset, :url => files_path) do |f| %>
+  <p><%= f.file_field :rich_file%></p>
+  <%= f.submit("Upload") %>
+<% end %>
+</div>
+
+<ul id="items">
+
+  <li id="uploadBlock">
+    <div id="upload" class="qq-upload-button placeholder">
+      <div class="spinner"></div>
+    </div>
+    <p><%= t(:upload_a_file) %></p>
+  </li>
+
+	<%= render :partial => "file", :collection => @items, :as => :file %>
+
+</ul>

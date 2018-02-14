@@ -1,0 +1,2 @@
+module ForumPostCommentAttachmentsHelper
+end

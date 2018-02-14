@@ -1,0 +1,17 @@
+<%= form_for(@membership_cancellation) do |f| %>
+  <% if @membership_cancellation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@membership_cancellation.errors.count, "error") %> prohibited this membership_cancellation from being saved:</h2>
+
+      <ul>
+      <% @membership_cancellation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

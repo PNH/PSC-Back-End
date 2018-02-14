@@ -1,0 +1,29 @@
+<%= form_for(@group_post_attachment) do |f| %>
+  <% if @group_post_attachment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@group_post_attachment.errors.count, "error") %> prohibited this group_post_attachment from being saved:</h2>
+
+      <ul>
+      <% @group_post_attachment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :group_post_id %><br>
+    <%= f.text_field :group_post_id %>
+  </div>
+  <div class="field">
+    <%= f.label :rich_file_id %><br>
+    <%= f.number_field :rich_file_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

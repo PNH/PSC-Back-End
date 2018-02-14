@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Group Post Likes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Post</th>
+      <th>User</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @group_post_likes.each do |group_post_like| %>
+      <tr>
+        <td><%= group_post_like.group_id %></td>
+        <td><%= group_post_like.post_id %></td>
+        <td><%= group_post_like.user_id %></td>
+        <td><%= group_post_like.status %></td>
+        <td><%= link_to 'Show', group_post_like %></td>
+        <td><%= link_to 'Edit', edit_group_post_like_path(group_post_like) %></td>
+        <td><%= link_to 'Destroy', group_post_like, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Group post like', new_group_post_like_path %>

@@ -1,0 +1,1 @@
+json.partial! "horse_healths/horse_health", horse_health: @horse_health

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Blog Moderators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blog_moderators.each do |blog_moderator| %>
+      <tr>
+        <td><%= link_to 'Show', blog_moderator %></td>
+        <td><%= link_to 'Edit', edit_blog_moderator_path(blog_moderator) %></td>
+        <td><%= link_to 'Destroy', blog_moderator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog moderator', new_blog_moderator_path %>

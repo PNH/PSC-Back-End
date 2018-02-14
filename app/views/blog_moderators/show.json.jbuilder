@@ -1,0 +1,1 @@
+json.partial! "blog_moderators/blog_moderator", blog_moderator: @blog_moderator

@@ -1,0 +1,1 @@
+json.partial! "event_category_mappings/event_category_mapping", event_category_mapping: @event_category_mapping

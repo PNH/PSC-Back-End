@@ -1,0 +1,1 @@
+json.array! @group_post_attachments, partial: 'group_post_attachments/group_post_attachment', as: :group_post_attachment

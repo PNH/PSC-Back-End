@@ -1,0 +1,2 @@
+module GroupPostAttachmentsHelper
+end

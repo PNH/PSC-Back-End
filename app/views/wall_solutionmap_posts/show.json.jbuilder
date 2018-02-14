@@ -1,0 +1,1 @@
+json.partial! "wall_solutionmap_posts/wall_solutionmap_post", wall_solutionmap_post: @wall_solutionmap_post

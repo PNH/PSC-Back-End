@@ -1,0 +1,2 @@
+class PageAttachmentsController < ApplicationController
+end

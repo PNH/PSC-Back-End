@@ -1,0 +1,26 @@
+<script type="text/javascript">
+$(document).ready(function() {
+
+  $("#tag_name_input #tag_slug").prop("disabled", true);
+
+  $("#tag_name_input #tag_name").change(function() {
+    var _value = $("#tag_name_input #tag_name").val();
+    _value = removeSpecialChars(_value);
+    _value = _value.replace(/\s+/g, '-').toLowerCase();
+    $("#tag_slug_input #tag_slug").val(_value);
+  });
+
+  // $('#tag_name').on('keypress', function(e) {
+  //   if (e.which == 32){
+  //     return false;
+  //   }
+  // });
+});
+
+function removeSpecialChars(str) {
+  return str.replace(/(?!\w|\s)./g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2');
+}
+
+</script>

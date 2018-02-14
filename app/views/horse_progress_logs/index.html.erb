@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Horse Progress Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @horse_progress_logs.each do |horse_progress_log| %>
+      <tr>
+        <td><%= link_to 'Show', horse_progress_log %></td>
+        <td><%= link_to 'Edit', edit_horse_progress_log_path(horse_progress_log) %></td>
+        <td><%= link_to 'Destroy', horse_progress_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Horse progress log', new_horse_progress_log_path %>

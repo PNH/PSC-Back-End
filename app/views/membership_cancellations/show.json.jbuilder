@@ -1,0 +1,1 @@
+json.partial! "membership_cancellations/membership_cancellation", membership_cancellation: @membership_cancellation

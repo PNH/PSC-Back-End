@@ -1,0 +1,2 @@
+module GroupPostCommentsHelper
+end

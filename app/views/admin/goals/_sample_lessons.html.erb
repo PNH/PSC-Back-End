@@ -1,0 +1,36 @@
+<table style="width: 90%; margin:0 auto;">
+  <thead>
+    <tr>
+      <th>
+        Lesson Title
+      </th>
+      <th>
+        Level
+      </th>
+      <th>
+        Savvy
+      </th>
+      <th style="width: 10%">
+        
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.sample_lessons.each do |lesson| %>
+    <tr>
+      <td>
+        <%= lesson.title %>
+      </td>
+      <td>
+        <%= lesson.lesson_category.savvy.level.title %>
+      </td>
+      <td>
+        <%= lesson.lesson_category.savvy.title %>
+      </td>
+      <td>
+        <%= link_to 'Remove', sample_lessons_admin_goal_path+"/?lid=#{lesson.id}", method: :delete  %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

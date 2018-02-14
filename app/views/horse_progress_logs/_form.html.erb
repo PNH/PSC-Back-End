@@ -1,0 +1,17 @@
+<%= form_for(@horse_progress_log) do |f| %>
+  <% if @horse_progress_log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@horse_progress_log.errors.count, "error") %> prohibited this horse_progress_log from being saved:</h2>
+
+      <ul>
+      <% @horse_progress_log.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Membership Cancellations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @membership_cancellations.each do |membership_cancellation| %>
+      <tr>
+        <td><%= link_to 'Show', membership_cancellation %></td>
+        <td><%= link_to 'Edit', edit_membership_cancellation_path(membership_cancellation) %></td>
+        <td><%= link_to 'Destroy', membership_cancellation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Membership cancellation', new_membership_cancellation_path %>

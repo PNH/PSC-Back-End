@@ -1,0 +1,719 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+*/
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* line 67, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+*, html, body {
+  font-family: helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 78, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#legacy-form {
+  display: none;
+}
+
+/* line 82, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+header {
+  position: fixed;
+  z-index: 999;
+  height: 46px;
+  width: 100%;
+  background: #f3f3f3;
+  border-bottom: 1px solid white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: set 0 0 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 94, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#rich-search {
+  float: left;
+  margin: 10px;
+}
+/* line 97, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#rich-search input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid lightGray;
+  border-radius: 3px;
+}
+
+/* line 105, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#loading {
+  float: left;
+  width: 16px;
+  height: 46px;
+  margin-left: 20px;
+  background: url(/assets/rich/loading-ad810ec84d9caadc8483db2c0c40736d6324ceb3c749a0f0178416e7eecc422e.png) no-repeat center;
+}
+
+/* line 113, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#insert-toggle, #view-toggle, #sort-toggle {
+  float: right;
+  height: 46px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+}
+
+/* line 120, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#sort-toggle {
+  margin: 0 20px 0 0;
+}
+
+/* line 124, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#insert-many, #insert-one, #view-list, #view-grid, #sort-by-date, #sort-alphabetically {
+  display: block;
+  width: 16px;
+  height: 46px;
+  text-indent: -9999em;
+  background: no-repeat center;
+}
+
+/* line 132, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#insert-many {
+  background-image: url(/assets/rich/insert-many-b5b6c60d87ff10aeca5ddf5ce3a3397796f12758c31a48ee3fd84cf02759201e.png);
+}
+
+/* line 136, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#insert-one {
+  background-image: url(/assets/rich/insert-one-07d17640939f8d3a4c4fd7d02ab03b2858d77e58fda0f2d461e3ff5c89c567b5.png);
+}
+
+/* line 140, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#view-grid {
+  background-image: url(/assets/rich/view-grid-263ed8cefa41ba5b31578f3a311f64a1ad1b3062843d6e5a30487a98ebd37f6e.png);
+}
+
+/* line 144, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#view-list {
+  background-image: url(/assets/rich/view-list-af23368c2433dde1fb610b7da76cf0a9ff0ecce18ba586e0e486bdcee2dc0500.png);
+}
+
+/* line 148, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#sort-by-date {
+  background-image: url(/assets/rich/sort-by-date-3b9f6c9b2234e91d1de0ce94a8c7100732b57a6c88cd3c9d77645a9f29fbe663.png);
+}
+
+/* line 152, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#sort-alphabetically {
+  background-image: url(/assets/rich/sort-alphabetically-0fb3485a4e2dba6f4b1840337684239699f3618cc648d7e93bd7e4cc888b20d8.png);
+}
+
+/* line 157, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items {
+  list-style: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+  padding-top: 67px;
+}
+/* line 163, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  margin-right: 20px;
+  float: left;
+}
+/* line 170, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li * {
+  transition: all 85ms ease-in, box-shadow 85ms ease-in, color 85ms ease-in;
+  -moz-transition: all 85ms ease-in, box-shadow 85ms ease-in, color 85ms ease-in;
+  -ms-transition: all 85ms ease-in, box-shadow 85ms ease-in, color 85ms ease-in;
+  -webkit-transition: all 85ms ease-in, box-shadow 85ms ease-in, color 85ms ease-in;
+}
+/* line 177, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .placeholder {
+  height: 98px;
+  width: 98px;
+  border: 1px dotted #888888;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 95px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #888888;
+}
+/* line 190, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #cecece;
+  -moz-box-shadow: set 0 0 4px #cecece;
+  -webkit-box-shadow: 0 0 4px #cecece;
+}
+/* line 195, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li img:hover {
+  box-shadow: 0 0 4px #888888;
+  -moz-box-shadow: set 0 0 4px #888888;
+  -webkit-box-shadow: 0 0 4px #888888;
+}
+/* line 199, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li img:active {
+  box-shadow: 0 0 4px black;
+  -moz-box-shadow: set 0 0 4px black;
+  -webkit-box-shadow: 0 0 4px black;
+}
+/* line 203, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .new {
+  box-shadow: 0 0 4px #3ac2cf;
+  -moz-box-shadow: set 0 0 4px #3ac2cf;
+  -webkit-box-shadow: 0 0 4px #3ac2cf;
+}
+/* line 207, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .spinner {
+  opacity: 0.3;
+  margin-left: 33px;
+  margin-top: 31px;
+  width: 32px;
+  height: 32px;
+  background: url(/assets/rich/plus-8955d24841a73dc9cdf99f00365720cf3d452a196c3352a8a76f06dae707d251.png) no-repeat top center;
+}
+/* line 216, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li #upload .spinner {
+  opacity: 1;
+}
+/* line 220, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .progress .progress-bar {
+  background: #f3f3f3;
+  height: 98px;
+  float: left;
+}
+/* line 226, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .progress .spinning {
+  -webkit-animation-name: spinner;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 233, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .progress .spinner.error {
+  opacity: 1;
+  background-image: url(/assets/rich/plus-red-cb7223cd441f1a65747f070337ad235b5d15939fb7c3b45ed5b110e2fe506706.png);
+  -webkit-transform: rotate(45deg);
+}
+/* line 239, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li p {
+  font-size: 10px;
+  margin: 0;
+  line-height: 17px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f3f3f3;
+  width: 80px;
+}
+/* line 250, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li:hover p {
+  color: #888888;
+}
+/* line 255, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li:not(#uploadBlock) p:hover {
+  cursor: text !important;
+  background: #fcf8e3;
+}
+/* line 262, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li form input {
+  position: relative;
+  padding: 2px 3px;
+  border-radius: 3px;
+  border: 1px solid lightGray;
+  z-index: 10;
+}
+/* line 271, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li .delete {
+  position: absolute;
+  text-indent: -9999px;
+  margin-left: 80px;
+  margin-top: -20px;
+  width: 20px;
+  height: 20px;
+  background: url(/assets/rich/x-red-f6b27732a1cf409276c876e264d52e8056a8cdc0d0bfa39d0af81d2b9cfacda6.png) no-repeat right 5px;
+  opacity: 0.1;
+}
+/* line 282, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li:hover .delete {
+  opacity: 0.5;
+}
+/* line 286, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items li:hover .delete:hover {
+  opacity: 1;
+}
+/* line 292, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items #uploadBlock:hover .placeholder .spinner {
+  background-position: 0 -32px;
+}
+
+/* line 302, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items:not(.list) li#uploadBlock p {
+  display: none;
+}
+/* line 309, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items:not(.list) li:not(#uploadBlock):hover p {
+  position: relative;
+  margin-top: 2px;
+  background: white;
+  height: auto;
+  padding: 0px 3px;
+  border: 1px solid lightGray;
+  border-radius: 3px;
+  z-index: 10;
+}
+/* line 320, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items:not(.list) li:not(#uploadBlock) p:hover {
+  background: #fcf8e3;
+}
+/* line 325, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items:not(.list) li:not(#uploadBlock) form input {
+  top: 2px;
+  left: -15px;
+  width: 120px;
+}
+/* line 332, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items:not(.list) li:not(#uploadBlock) .delete {
+  top: 120px;
+}
+
+/* line 343, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li {
+  width: auto;
+  height: 32px;
+  float: none;
+  margin-bottom: 16px;
+}
+/* line 349, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li img, #items.list li .placeholder {
+  height: 32px;
+  width: 32px;
+  float: left;
+  line-height: 32px;
+  border: none;
+}
+/* line 357, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li .spinner {
+  margin: 0;
+}
+/* line 361, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li .progress .progress-bar {
+  background: #888888;
+  height: 4px;
+  float: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 28px;
+}
+/* line 370, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li p {
+  color: #686868;
+  font-size: 14px;
+  width: auto;
+  height: 32px;
+  margin-left: 8px;
+  padding: 0 8px;
+  line-height: 32px;
+  float: left;
+  cursor: default;
+  border-radius: 3px;
+}
+/* line 384, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li form input {
+  float: left;
+  width: 210px;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 3px 5px;
+}
+/* line 394, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li .delete {
+  position: relative;
+  float: left;
+  text-indent: -9999px;
+  margin: 8px 0 0 0;
+  width: 20px;
+  height: 20px;
+  background: url(/assets/rich/x-red-f6b27732a1cf409276c876e264d52e8056a8cdc0d0bfa39d0af81d2b9cfacda6.png) no-repeat right 5px;
+  opacity: 0.1;
+}
+/* line 405, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+#items.list li #uploadBlock:hover .placeholder .spinner {
+  background-position: 0 0px;
+}
+
+/* line 413, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+.clickable:hover {
+  cursor: pointer;
+}
+
+/* line 418, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+ul.scopes {
+  list-style: none;
+  margin: 0 15px 0 15px;
+  padding: 0 10px 0 0;
+  background: url(/assets/rich/menu-dash-b6cbfb1940b9a7e7430c1c07a455108e63b3bec2e81fc7e78e02d1ad5b0a8a19.png) no-repeat right 23px;
+  float: right;
+}
+/* line 426, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+ul.scopes li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  margin-top: 14px;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* line 436, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+ul.scopes li.label {
+  color: #888888;
+  padding-right: 5px;
+}
+/* line 441, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+ul.scopes li.scope {
+  color: #686868;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+/* line 447, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+ul.scopes li.scope:hover {
+  cursor: pointer;
+  background: #dadada;
+  text-shadow: 0px 1px 0 white;
+}
+/* line 453, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/application.css.scss */
+ul.scopes li.scope.selected {
+  box-shadow: inset 0 1px 1px #686868;
+  -moz-box-shadow: inset 0 1px 1px #686868;
+  -webkit-box-shadow: inset 0 1px 1px #686868;
+  text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25);
+  color: #f3f3f3;
+  background: #888888;
+}
+/* line 1, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 2, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 3, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 4, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 6, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 7, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 8, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 10, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 11, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 13, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+a {
+  color: #00e;
+}
+
+/* line 14, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 15, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+a:hover {
+  color: #06e;
+}
+
+/* line 16, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 17, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 19, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 20, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 21, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 22, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 23, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 24, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 25, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 26, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* line 27, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 28, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+q {
+  quotes: none;
+}
+
+/* line 29, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 31, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 32, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 33, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 34, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 35, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 36, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 37, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 38, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 39, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+figure {
+  margin: 0;
+}
+
+/* line 41, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+form {
+  margin: 0;
+}
+
+/* line 42, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 43, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 44, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/* line 45, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 46, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/* line 47, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+table button, table input {
+  *overflow: auto;
+}
+
+/* line 48, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 49, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/* line 50, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 51, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 52, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 53, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 55, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 57, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 58, /home/ubuntu/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/fz_richeditor-6dbf2aa85e22/app/assets/stylesheets/rich/mixins/reset.css.scss */
+td {
+  vertical-align: top;
+}

@@ -1,0 +1,1 @@
+json.array! @level_checklists, partial: 'level_checklists/level_checklist', as: :level_checklist

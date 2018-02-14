@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Wall Solutionmap Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wall_solutionmap_posts.each do |wall_solutionmap_post| %>
+      <tr>
+        <td><%= link_to 'Show', wall_solutionmap_post %></td>
+        <td><%= link_to 'Edit', edit_wall_solutionmap_post_path(wall_solutionmap_post) %></td>
+        <td><%= link_to 'Destroy', wall_solutionmap_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wall solutionmap post', new_wall_solutionmap_post_path %>

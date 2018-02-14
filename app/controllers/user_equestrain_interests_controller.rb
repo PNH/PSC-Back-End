@@ -1,0 +1,2 @@
+class UserEquestrainInterestsController < ApplicationController
+end

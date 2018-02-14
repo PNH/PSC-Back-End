@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @group_post.user %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @group_post.content %>
+</p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @group_post.likes %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @group_post.status %>
+</p>
+
+<%= link_to 'Edit', edit_group_post_path(@group_post) %> |
+<%= link_to 'Back', group_posts_path %>

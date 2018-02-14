@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Horse Healths</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @horse_healths.each do |horse_health| %>
+      <tr>
+        <td><%= link_to 'Show', horse_health %></td>
+        <td><%= link_to 'Edit', edit_horse_health_path(horse_health) %></td>
+        <td><%= link_to 'Destroy', horse_health, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Horse health', new_horse_health_path %>

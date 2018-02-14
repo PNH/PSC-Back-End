@@ -1,0 +1,33 @@
+<%= form_for(@group_post_like) do |f| %>
+  <% if @group_post_like.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@group_post_like.errors.count, "error") %> prohibited this group_post_like from being saved:</h2>
+
+      <ul>
+      <% @group_post_like.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :group_id %><br>
+    <%= f.text_field :group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :post_id %><br>
+    <%= f.text_field :post_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

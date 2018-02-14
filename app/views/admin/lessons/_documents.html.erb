@@ -1,0 +1,24 @@
+<table style="width: 90%; margin:0 auto;">
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th style="width: 10%">
+        
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.documents.each do |doc| %>
+    <tr>
+      <td>
+        <%= doc.filename %>
+      </td>
+      <td>
+        <%= link_to 'Remove', "#{documents_admin_lesson_category_lesson_path}/?doc_id=#{doc.id}", method: :delete %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/public/parelli_ror
+permissions:
+  - object: /
+    owner: ubuntu
+    group: ubuntu
+    mode: 775
+hooks:
+  AfterInstall:
+    - location: codedeploy/shell/build.sh

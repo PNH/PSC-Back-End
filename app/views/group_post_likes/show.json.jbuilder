@@ -1,0 +1,1 @@
+json.partial! "group_post_likes/group_post_like", group_post_like: @group_post_like

@@ -1,0 +1,2 @@
+module EventPricingsHelper
+end

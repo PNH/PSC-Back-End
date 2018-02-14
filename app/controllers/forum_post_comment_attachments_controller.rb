@@ -1,0 +1,2 @@
+class ForumPostCommentAttachmentsController < ApplicationController
+end

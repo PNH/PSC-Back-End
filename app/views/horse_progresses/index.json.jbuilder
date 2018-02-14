@@ -1,0 +1,1 @@
+json.array! @horse_progresses, partial: 'horse_progresses/horse_progress', as: :horse_progress

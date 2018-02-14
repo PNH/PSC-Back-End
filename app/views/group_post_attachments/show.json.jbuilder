@@ -1,0 +1,1 @@
+json.partial! "group_post_attachments/group_post_attachment", group_post_attachment: @group_post_attachment

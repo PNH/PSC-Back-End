@@ -1,0 +1,27 @@
+<table>
+    <thead>
+        <tr>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Sub Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= resource.membership_type.name %></td>
+            <td><%= number_to_currency resource.cost %></td>
+            <td><%= number_to_currency resource.total %></td>
+        </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">
+            <hr/>    
+        </td>
+    <tr/>
+        <tr>
+            <td colspan="2">Total</td>
+            <td><%= number_to_currency resource.total %></td>
+        </tr>
+    </tfoot>
+</table>

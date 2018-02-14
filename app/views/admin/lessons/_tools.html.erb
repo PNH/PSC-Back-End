@@ -1,0 +1,24 @@
+<table style="width: 90%; margin:0 auto;">
+  <thead>
+    <tr>
+      <th>
+        Tools
+      </th>
+      <th style="width: 10%">
+        
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.lesson_tool.each do |tool| %>
+    <tr>
+      <td>
+        <%= tool.title %>
+      </td>
+      <td>
+        <%= link_to 'Remove', "#{tools_admin_lesson_category_lesson_path}/?lid=#{tool.id}", method: :delete %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

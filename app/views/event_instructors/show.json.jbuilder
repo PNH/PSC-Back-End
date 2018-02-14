@@ -1,0 +1,1 @@
+json.partial! "event_instructors/event_instructor", event_instructor: @event_instructor

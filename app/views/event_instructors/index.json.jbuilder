@@ -1,0 +1,1 @@
+json.array! @event_instructors, partial: 'event_instructors/event_instructor', as: :event_instructor

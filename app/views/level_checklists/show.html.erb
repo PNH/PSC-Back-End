@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @level_checklist.level_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @level_checklist.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @level_checklist.content %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @level_checklist.status %>
+</p>
+
+<%= link_to 'Edit', edit_level_checklist_path(@level_checklist) %> |
+<%= link_to 'Back', level_checklists_path %>

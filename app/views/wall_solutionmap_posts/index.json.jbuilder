@@ -1,0 +1,1 @@
+json.array! @wall_solutionmap_posts, partial: 'wall_solutionmap_posts/wall_solutionmap_post', as: :wall_solutionmap_post

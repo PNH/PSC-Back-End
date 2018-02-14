@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Level Checklists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @level_checklists.each do |level_checklist| %>
+      <tr>
+        <td><%= level_checklist.level_id %></td>
+        <td><%= level_checklist.title %></td>
+        <td><%= level_checklist.content %></td>
+        <td><%= level_checklist.status %></td>
+        <td><%= link_to 'Show', level_checklist %></td>
+        <td><%= link_to 'Edit', edit_level_checklist_path(level_checklist) %></td>
+        <td><%= link_to 'Destroy', level_checklist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Level checklist', new_level_checklist_path %>

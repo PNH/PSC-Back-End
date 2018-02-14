@@ -1,0 +1,2 @@
+class GroupPostCommentAttachmentsController < ApplicationController
+end

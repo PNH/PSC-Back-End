@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Group Post Attachments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group post</th>
+      <th>Rich file</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @group_post_attachments.each do |group_post_attachment| %>
+      <tr>
+        <td><%= group_post_attachment.group_post %></td>
+        <td><%= group_post_attachment.rich_file_id %></td>
+        <td><%= group_post_attachment.status %></td>
+        <td><%= link_to 'Show', group_post_attachment %></td>
+        <td><%= link_to 'Edit', edit_group_post_attachment_path(group_post_attachment) %></td>
+        <td><%= link_to 'Destroy', group_post_attachment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Group post attachment', new_group_post_attachment_path %>

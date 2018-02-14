@@ -1,0 +1,24 @@
+<table style="width: 90%; margin:0 auto;">
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th style="width: 10%">
+        
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% resource.videos.each do |vid| %>
+    <tr>
+      <td>
+        <%= vid.filename %>
+      </td>
+      <td>
+        <%= link_to 'Remove', "#{videos_admin_lesson_category_lesson_path}/?vid=#{vid.id}", method: :delete %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

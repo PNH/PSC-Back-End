@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Group post:</strong>
+  <%= @group_post_attachment.group_post %>
+</p>
+
+<p>
+  <strong>Rich file:</strong>
+  <%= @group_post_attachment.rich_file_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @group_post_attachment.status %>
+</p>
+
+<%= link_to 'Edit', edit_group_post_attachment_path(@group_post_attachment) %> |
+<%= link_to 'Back', group_post_attachments_path %>

@@ -1,0 +1,17 @@
+<%= form_for(@wall_solutionmap_post) do |f| %>
+  <% if @wall_solutionmap_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wall_solutionmap_post.errors.count, "error") %> prohibited this wall_solutionmap_post from being saved:</h2>
+
+      <ul>
+      <% @wall_solutionmap_post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

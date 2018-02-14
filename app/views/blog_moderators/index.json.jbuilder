@@ -1,0 +1,1 @@
+json.array! @blog_moderators, partial: 'blog_moderators/blog_moderator', as: :blog_moderator

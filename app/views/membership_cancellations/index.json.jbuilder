@@ -1,0 +1,1 @@
+json.array! @membership_cancellations, partial: 'membership_cancellations/membership_cancellation', as: :membership_cancellation

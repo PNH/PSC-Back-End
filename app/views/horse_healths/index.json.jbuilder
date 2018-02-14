@@ -1,0 +1,1 @@
+json.array! @horse_healths, partial: 'horse_healths/horse_health', as: :horse_health

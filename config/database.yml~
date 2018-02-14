@@ -1,0 +1,47 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  pool: 5
+
+lakitha: &lakitha
+  <<: *default
+  adapter: postgresql
+  database: parelliror_development
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  host: localhost
+  database: parelli_develop
+  username: postgres
+  password: f1den2
+
+  <<: *lakitha
+#  adapter: mysql
+#  database: parelli
+  # username: postgres
+#  username: root
+  # password: '123'
+#  password: ''
+
+staging:
+  <<: *default
+  host: new-parelli-staging-db2.cpuqd6dk3bx2.us-east-1.rds.amazonaws.com
+  database: parelli_ror
+  username: parelli_user
+  password: Epic#098
+
+parellist:
+  <<: *default
+  host: parelli-staging-db.cpuqd6dk3bx2.us-east-1.rds.amazonaws.com
+  username: parelliuser
+  password: Epic#098
+
+test:
+  <<: *default
+  host: new-parelli-test-db.cpuqd6dk3bx2.us-east-1.rds.amazonaws.com
+  database: parelli_ror
+  username: parelli_user
+  password: Epic#098

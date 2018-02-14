@@ -1,0 +1,1 @@
+json.array! @group_post_likes, partial: 'group_post_likes/group_post_like', as: :group_post_like

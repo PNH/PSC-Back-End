@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Horse Progresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @horse_progresses.each do |horse_progress| %>
+      <tr>
+        <td><%= link_to 'Show', horse_progress %></td>
+        <td><%= link_to 'Edit', edit_horse_progress_path(horse_progress) %></td>
+        <td><%= link_to 'Destroy', horse_progress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Horse progress', new_horse_progress_path %>
